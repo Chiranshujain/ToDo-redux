@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React, { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { addTask } from './redux/actions';
+import TodoList from './components/TodoList';
+import TodoForm from './components/TodoForm';
+import SearchBar from './components/SearchBar';
+import data from './data.json';
+import './index.css';
 
 function App() {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    // Initialize the tasks from the dummy JSON data
+    data.forEach(task => {
+      dispatch(addTask(task));
+    });
+  }, [dispatch]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Todo List</h1>
+      <SearchBar />
+      <TodoForm />
+      <TodoList />
     </div>
   );
 }

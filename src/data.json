@@ -1,0 +1,17 @@
+[
+    {
+      "id": 1,
+      "title": "Learn React",
+      "description": "Study the React documentation and build a small project.",
+      "completed": false,
+      "timestamp": "2024-08-04T10:00:00Z"
+    },
+    {
+      "id": 2,
+      "title": "Grocery Shopping",
+      "description": "Buy fruits, vegetables, and dairy products.",
+      "completed": true,
+      "timestamp": "2024-08-03T14:30:00Z"
+    }
+  ]
+  
