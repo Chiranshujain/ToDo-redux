@@ -1,4 +1,4 @@
-// src/App.js
+
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { addTask } from './redux/actions';
@@ -12,7 +12,6 @@ function App() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    // Initialize the tasks from the dummy JSON data
     data.forEach(task => {
       dispatch(addTask(task));
     });

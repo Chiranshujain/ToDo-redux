@@ -1,4 +1,4 @@
-// src/components/SearchBar.js
+
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { setSearchQuery } from '../redux/actions';

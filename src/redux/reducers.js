@@ -1,4 +1,4 @@
-// src/redux/reducers.js
+
 import { ADD_TASK, UPDATE_TASK, TOGGLE_TASK_COMPLETION, SET_SEARCH_QUERY } from './actionTypes';
 
 const initialState = {

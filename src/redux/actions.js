@@ -1,4 +1,4 @@
-// src/redux/actions.js
+
 import { ADD_TASK, UPDATE_TASK, TOGGLE_TASK_COMPLETION, SET_SEARCH_QUERY } from './actionTypes';
 
 export const addTask = (task) => ({
